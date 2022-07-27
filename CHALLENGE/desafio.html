@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografador de códigos </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main-alura-cripto">
+        <article id="card-crip">
+            <section class="card-logo">
+                <h1 style="font-size: 0px;"> Alura codificador e decodificador</h1>
+                <img id="logo" src='descrip02.png' alt="logo da Alura">
+            </section>
+
+            <section class="card-texto-codificar">
+                <textarea name="codificador" id="codificador" placeholder="Digite sua mensagem""></textarea>
+            </section>
+
+            <section class="card-funcoes">
+                <div class="botoes-criptografia">
+                    <input onclick="chamarCripto()" id="cript" type="button" value="Criptografar" \>
+                    <input onclick="chamarDescripto()"
+                    id="descript" type="button" value="Descriptografar"\>
+                </div>
+            </section>
+        </article>
+
+        <article id="card-descrip">
+            <div id="1">
+                <img src="" alt="">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto para ser criptografado </p>
+            </div>
+
+            <div id="2" class="desativado">
+                    <textarea name="mensegem-cript" id="mensagem-cript"></textarea>
+                    <input onclick="copiarArea()" id="copiar" type="button" value="Copiar">
+            </div>
+        </article>
+    </main>
+
+    <script src="funcionamento.js"></script>
+</body>
+</html>

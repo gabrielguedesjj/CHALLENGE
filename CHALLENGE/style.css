@@ -1,0 +1,222 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    /*outline: none;*/
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#main-alura-cripto{
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #000000;
+}
+
+/* card crip*/
+#card-crip{
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-logo #logo{
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+.card-texto-codificar{
+    width: 80%;
+    margin-top: 100px;
+}
+
+.card-texto-codificar #codificador{
+    width: 100%;
+    height: 50vh;
+    resize: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    overflow-y: hidden;
+    resize: none;
+    white-space: pre-wrap;
+}
+
+.card-texto-codificar #codificar::placeholder{
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.card-funcoes{
+    width: 80%;
+    margin-top: 40px;
+}
+
+.card-funcoes h2{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.botoes-criptografia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botoes-criptografia input[type='button']{
+    width: 100%;
+    padding: 20px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    text-align: center;
+    border-radius: 20px;
+}
+.botoes-criptografia #cript{
+    background-color: #4151FF;
+    color: #fff;
+    margin-right: 24px;
+}
+.botoes-criptografia #descrip{
+    border: 1px solid #0A3871;
+}
+
+/*card descrip*/
+
+#card-descrip{
+    width: 29%;
+    display: flex;
+    flex-direction: column; /* direção centralizada*/
+    align-items: center; /*alinhamento de intens*/
+    background-color: rgb(41, 36, 36);
+    padding-top: 32px; /*prencjimento total */
+    margin-right: 20px; /* margem a direita */
+    margin-bottom: 40px; /*margem debaixo */
+    border-radius: 20px; /*borda*/
+    min-height: 100%; /*altura minima*/
+}
+
+#card-descrip h2 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#card-descrip p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#card-descrip #mensagem-cript{
+    width: 100%;
+    height: 300px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: normal;
+    overflow-y: hidden;
+    resize: none;
+    white-space: pre-wrap;
+    background-color: rgb(41, 36, 36);
+}
+
+#card-descrip #copiar{
+    
+    width: 80%;
+    padding: 14px;
+    margin-top: 140px;
+    margin: 30px;
+    background-color: #fff;
+    color: #0A3871;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 20px;
+}
+#card-descrip #copiar:active{
+    color: #017e01;
+    border-color: #017e01;
+}
+
+
+/*BREAKPOINTS*/
+
+@media screen and (max-width: 1029px){
+    /*GERAL */
+    #main-alura-cripto{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+
+    /* card crip */
+    #card-crip{
+        width: 100%;
+    }
+    .card-logo #logo{
+        left: 50px;
+    }
+     .card-texto-codificar{
+         width: 90%;
+         margin-top: 100px;
+     }
+     .card-funcoes{
+         width: 90%;
+     }
+     .botoes-criptografia input[type="button"]{
+        width: 100%;
+    }
+     
+
+    /* card descrip */
+    #card-descrip img{
+        display: none;
+    }
+    #card-descrip{
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding-top: 10px;
+        display: block;
+    }
+    #card-descrip #mensagem-crip{
+        width: 90%;
+        margin: 0 5%;
+        height: 220px;
+    }
+    #card-descrip #copiar{
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
